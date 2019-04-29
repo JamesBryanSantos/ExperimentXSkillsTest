@@ -23,8 +23,9 @@ int main(){
     grossIncome = hoursWorked * payRate;
     netIncome = grossIncome *= TAXRATE;
     schoolAmount = netIncome * SCHOOLPERCENTAGEOFINCOME;
+clothesAmount = netIncome * CLOTHESPERCENTAGEOFINCOME;
     netIncome -= (clothesAmount + schoolAmount); 
-	clothesAmount = netIncome * CLOTHESPERCENTAGEOFINCOME;
+	
     bondsAmount = netIncome * SAVINGSBONDSPERCENTAGEOFINCOME;
     parentsBondsAmount = bondsAmount * PARENTSCOCONTRIBUTIONAMOUNT;
     
